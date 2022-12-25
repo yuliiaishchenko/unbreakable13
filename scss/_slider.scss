@@ -22,14 +22,52 @@ ul {
   padding-right: 0%;
 }
 
-.container {
-  background-image: url(../images/desctop/desktop.jpg);
-}
+// .slid {
+//   background-color: $bg-color;
+//   height: 600px;
+//   max-width: 1600px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-image: url(../images/desctop/desktop.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   @media screen and (max-width: 767px) {
+//     background-image: url(../images/mobile/mobile.jpg);
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(../images/tablet/tablet.jpg);
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     background-image: url(../images/desctop/desktop.jpg);
+//   }
 
 .slider {
   min-width: 0;
   position: relative;
   padding: 0px 50px;
+  background-color: $bg-color;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/desctop/desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/mobile/mobile.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/tablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desctop/desktop.jpg);
+  }
 }
 
 /* Слайдер */
@@ -66,19 +104,20 @@ ul {
 // .slick-slide.slick-cloned {
 // }
 /* Стрелка */
-.slider.slick-arrow {
+.slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 10;
   font-size: 0;
   overflow: hidden;
+  display: none;
 }
 /* Стрелка влево */
-.slider.slick-arrow.slick-prev {
+.slick-arrow.slick-prev {
   left: 0;
 }
 /* Стрелка вправо */
-.slider.slick-arrow.slick-next {
+.slick-arrow.slick-next {
   right: 0;
 }
 /* Стрелка не активная */
@@ -92,7 +131,10 @@ ul {
 }
 .slick-dots li {
   list-style: none;
-  margin: 0px 10px;
+  margin-right: 10px;
+}
+.slick-dots li:nth-child(3n) {
+  margin-right: 0;
 }
 /* Активная точка */
 .slick-dots li.slick-active button {
@@ -131,13 +173,18 @@ img {
   justify-content: center;
   color: #fcfcfc;
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 480px) {
     width: 280px;
     height: 256px;
+    padding: 35px 39px;
   }
   @media screen and (min-width: 768px) {
     width: 705px;
     height: 138px;
+    padding: 43px 109px;
+    border-radius: 10px;
   }
   @media screen and (min-width: 1200px) {
     width: 938px;

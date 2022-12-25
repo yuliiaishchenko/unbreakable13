@@ -25,7 +25,7 @@ ul {
   padding-right: 0%;
 }
 
-.container {
+.slid {
   background-image: url(../images/desctop/desktop.jpg);
 }
 
@@ -51,7 +51,6 @@ ul {
 
 /* Стрелка */
 .slider.slick-arrow {
-  position: absolute;
   top: 50%;
   z-index: 10;
   font-size: 0;
@@ -78,7 +77,11 @@ ul {
 
 .slick-dots li {
   list-style: none;
-  margin: 0px 10px;
+  margin-right: 10px;
+}
+
+.slick-dots li:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Активная точка */
@@ -121,17 +124,22 @@ img {
   justify-content: center;
   color: #fcfcfc;
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .slider_text {
     width: 280px;
     height: 256px;
+    padding: 35px 39px;
   }
 }
 @media screen and (min-width: 768px) {
   .slider_text {
     width: 705px;
     height: 138px;
+    padding: 43px 109px;
+    border-radius: 10px;
   }
 }
 @media screen and (min-width: 1200px) {

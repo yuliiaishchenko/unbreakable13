@@ -4,56 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <!-- <script type="module" src="./index.js"></script> -->
   </head>
   <body>
-    <ul class="slider">
-      <li class="slider_item">
-        <div class="slider_img">
-          <img 
-          srcset="./images/emily.jpg 1x,
-          ./images/emily@2x.jpg 2x"
-          alt="emily" >
-        </div>
-        <div class="slider_text">
-          <p>I love visiting your cafe.
-            You prepare the most delicious ice cream in Los Angeles! 
-           In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
-        </div>
-        <div class="slider_title">
-          <p>Emily, Los Angeles</p>
-        </div>
-      </li>
-      <li>
-        <div> 
-           <img 
-          srcset="./images/bryan.jpg 1x,
-          ./images/bryan@2x.jpg 2x"
-          alt="bryan" >
-        </div>
-        <div>
-          <p>Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!
-
+    <container class="container">
+      <div class="slider">
+        <div class="slider_item">
+          <img class="slider_img" src="./images/emily.jpg" alt="emily" />
+          <p class="slider_text">
+            I love visiting your cafe. You prepare the most delicious ice cream
+            in Los Angeles! In addition, you have beautiful serving, cozy
+            atmosphere and polite staff.
           </p>
+          <p class="slider_title">Emily, Los Angeles</p>
         </div>
-        <div><p>Bryan, New-York</p></div>
-      </li>
-      <li>
-        <div>
-          <img 
-          srcset="./images/diana.jpg 1x,
-          ./images/diana@2x.jpg 2x"
-          alt="diana" >
-        </div>
-        <div>
-          <p>Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+        <div class="slider_item">
+          <img class="slider_img" src="./images/bryan.jpg" alt="bryan" />
+          <p class="slider_text">
+            Every day we come to you with friends after classes in college. We
+            love your ice cream and casual atmosphere!
           </p>
+          <p class="slider_title">Bryan, New-York</p>
         </div>
-        <div>
-          <p>Diana, Chicago</p>
+        <div class="slider_item">
+          <img class="slider_img" src="./images/diana.jpg" alt="diana" />
+          <p class="slider_text">
+            Ice cream is my passion! I love your chocolate hazelnut ice cream!
+            And I really like the excellent service - always served politely and
+            quickly!
+          </p>
+          <p class="slider_title">Diana, Chicago</p>
         </div>
-      </li>
-    </ul>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/slick.js"></script>
+    </container>
   </body>
+</html>

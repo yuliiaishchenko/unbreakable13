@@ -25,14 +25,39 @@ ul {
   padding-right: 0%;
 }
 
-.slid {
-  background-image: url(../images/desctop/desktop.jpg);
-}
-
 .slider {
   min-width: 0;
   position: relative;
   padding: 0px 50px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/desctop/desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    background-image: url(../images/mobile/mobile.jpg);
+    width: 320px;
+    height: 1037px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    background-image: url(../images/tablet/tablet.jpg);
+    width: 768px;
+    height: 1017px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slider {
+    background-image: url(../images/desctop/desktop.jpg);
+    width: 1330px;
+    height: 1053px;
+  }
 }
 
 /* Слайдер */
@@ -50,20 +75,22 @@ ul {
 }
 
 /* Стрелка */
-.slider.slick-arrow {
+.slick-arrow {
+  position: absolute;
   top: 50%;
   z-index: 10;
   font-size: 0;
   overflow: hidden;
+  opacity: 0;
 }
 
 /* Стрелка влево */
-.slider.slick-arrow.slick-prev {
+.slick-arrow.slick-prev {
   left: 0;
 }
 
 /* Стрелка вправо */
-.slider.slick-arrow.slick-next {
+.slick-arrow.slick-next {
   right: 0;
 }
 
@@ -101,6 +128,11 @@ ul {
 
 .slider_item {
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .slider_item {
+    margin-top: 178px;
+  }
 }
 
 img {
@@ -156,4 +188,9 @@ img {
   text-align: center;
   color: #131313;
   margin-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  .slider_title {
+    margin-bottom: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

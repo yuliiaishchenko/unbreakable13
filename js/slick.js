@@ -4,11 +4,12 @@ $(document).ready(function() {
         dots: true,
         adaptiveHeight: true,
         speed: 1000,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         pauseOnFocus: true,
         pauseOnHover: true,
         pauseOnDotsHover: true,
+        
     }
     );
 });
